@@ -52,18 +52,25 @@ export const PROJECTS: Project[] = [
 
 export const SKILLS: Skill[] = [
   { name: "Python", icon: "fa-python", category: "Programming" },
-  { name: "C#", icon: "fa-code", category: "Programming" },
+  { name: "C# / C++", icon: "fa-code", category: "Programming" },
   { name: "JavaScript", icon: "fa-js", category: "Programming" },
-  { name: "ReactJS", icon: "fa-react", category: "Web" },
-  { name: "Django", icon: "fa-leaf", category: "Web" },
+  { name: "SQL", icon: "fa-database", category: "Programming" },
+  { name: "MERN Stack", icon: "fa-react", category: "Web" },
+  { name: "Django / Flask", icon: "fa-leaf", category: "Web" },
+  { name: "HTML5 / CSS3", icon: "fa-html5", category: "Web" },
+  { name: "REST APIs", icon: "fa-network-wired", category: "Web" },
+  { name: "Embedded Systems", icon: "fa-microchip", category: "Engineering" },
   { name: "HVAC Design", icon: "fa-snowflake", category: "Engineering" },
   { name: "AutoCAD", icon: "fa-drafting-compass", category: "Engineering" },
-  { name: "MATLAB", icon: "fa-square-root-alt", category: "Engineering" },
+  { name: "Power Electronics", icon: "fa-bolt", category: "Engineering" },
+  { name: "IoT Automation", icon: "fa-robot", category: "Engineering" },
   { name: "Raspberry Pi", icon: "fa-microchip", category: "IoT" },
-  { name: "Arduino", icon: "fa-bolt", category: "IoT" },
+  { name: "ESP32 / Arduino", icon: "fa-bolt", category: "IoT" },
+  { name: "OpenCV", icon: "fa-eye", category: "IoT" },
+  { name: "PCB Design", icon: "fa-layer-group", category: "IoT" },
   { name: "Node.js", icon: "fa-node-js", category: "Learning" },
   { name: "Flutter", icon: "fa-mobile-alt", category: "Learning" },
-  { name: "Flask", icon: "fa-pepper-hot", category: "Learning" }
+  { name: "GitHub / VS Code", icon: "fa-github", category: "Learning" }
 ];
 
 export const EXPERIENCES: Experience[] = [
