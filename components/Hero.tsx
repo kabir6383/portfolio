@@ -6,7 +6,7 @@ import resumePdf from './Kabir-Resume.pdf';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative hero-gradient min-h-screen flex flex-col justify-center items-center text-center px-6 pt-[90px] overflow-hidden">
+    <section id="home" className="relative hero-gradient min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20 overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[150px] animate-pulse pointer-events-none"></div>
       <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-cyan-600/10 rounded-full blur-[150px] animate-pulse pointer-events-none" style={{ animationDelay: '2s' }}></div>
