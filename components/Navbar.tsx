@@ -54,9 +54,6 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
               className="flex items-center gap-3 cursor-pointer"
               onClick={() => handleNavClick('home')}
             >
-              <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-[0_0_20px_rgba(37,99,235,0.4)]">
-                <Sparkles size={20} />
-              </div>
               <span className="text-lg font-black text-white tracking-tighter uppercase italic hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-400 hover:to-cyan-400 transition-all duration-300">KABIR</span>
             </motion.div>
 
@@ -88,9 +85,6 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
       <nav className="fixed top-0 left-0 w-full z-[100] md:hidden p-4">
          <div className="glass-nav px-6 py-4 rounded-3xl flex items-center justify-between border border-white/5 shadow-xl">
             <span className="text-sm font-black text-white tracking-widest uppercase italic hover:text-blue-400 transition-colors">KABIR</span>
-            <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white shadow-[0_0_15px_#2563eb]">
-               <Sparkles size={16} />
-            </div>
          </div>
       </nav>
 
