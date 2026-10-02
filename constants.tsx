@@ -109,7 +109,7 @@ export const EXPERIENCES: Experience[] = [
     tags: ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs", "Full-Stack"]
   },
   {
-    company: "PCB Prototyping Lab",
+    company: "Ingage Technologies",
     role: "PCB Design Intern",
     date: "05-01-2026",
     duration: "15 Days",

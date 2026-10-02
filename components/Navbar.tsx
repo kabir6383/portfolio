@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Home, User, Award, Code, Layers, Briefcase, Mail, Download } from 'lucide-react';
-import resumePdf from './Kabir-Resume.pdf';
+import resumePdf from './kabir.pdf';
 import kabirImg from './kabir.jpg';
 
 interface NavbarProps {
@@ -48,13 +48,12 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
   return (
     <>
       {/* Desktop Glass Header */}
-      <header className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 hidden md:block ${
-        isScrolled ? 'py-3 glass-nav shadow-lg' : 'py-5 bg-transparent'
-      }`}>
+      <header className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 hidden md:block ${isScrolled ? 'py-3 glass-nav shadow-lg' : 'py-5 bg-transparent'
+        }`}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-          
+
           {/* Logo Monogram like target template */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -15 }}
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center gap-3 cursor-pointer group"
@@ -84,11 +83,10 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
                   <button
                     key={link.id}
                     onClick={() => handleNavClick(link.id)}
-                    className={`relative px-4 py-1.5 rounded-full text-xs font-semibold transition-all ${
-                      isActive 
-                        ? 'text-white font-bold' 
+                    className={`relative px-4 py-1.5 rounded-full text-xs font-semibold transition-all ${isActive
+                        ? 'text-white font-bold'
                         : 'text-slate-400 hover:text-white hover:bg-slate-800/50'
-                    }`}
+                      }`}
                   >
                     {isActive && (
                       <motion.div
@@ -159,9 +157,8 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
                 <div className={`transition-all duration-200 ${isActive ? 'text-cyan-400 scale-110' : 'text-slate-400'}`}>
                   <link.icon size={18} />
                 </div>
-                <span className={`text-[9px] font-semibold mt-0.5 transition-all ${
-                  isActive ? 'text-cyan-400 font-bold' : 'text-slate-500'
-                }`}>
+                <span className={`text-[9px] font-semibold mt-0.5 transition-all ${isActive ? 'text-cyan-400 font-bold' : 'text-slate-500'
+                  }`}>
                   {link.name}
                 </span>
               </button>

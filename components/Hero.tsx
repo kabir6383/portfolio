@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Download, Mail, Phone, ArrowDown, Award, CheckCircle2, Briefcase, GraduationCap } from 'lucide-react';
 
 import kabirImg from './kabir.jpg';
-import resumePdf from './Kabir-Resume.pdf';
+import resumePdf from './kabir.pdf';
 
 const Hero: React.FC = () => {
   const techStack = [
@@ -18,12 +18,12 @@ const Hero: React.FC = () => {
   ];
 
   return (
-    <section 
-      id="home" 
+    <section
+      id="home"
       className="min-h-screen relative flex items-center justify-center pt-32 pb-20 px-6 md:px-12 hero-gradient overflow-hidden"
     >
       <div className="max-w-5xl mx-auto w-full flex flex-col items-center text-center relative z-10 space-y-8">
-        
+
         {/* Profile Avatar with Descriptive Alt Text */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -32,9 +32,9 @@ const Hero: React.FC = () => {
           className="relative"
         >
           <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1 bg-gradient-primary shadow-xl shadow-cyan-500/20">
-            <img 
-              src={kabirImg} 
-              alt="Muthu Mohamed Kabir - Full-Stack Web and Embedded Hardware Engineer" 
+            <img
+              src={kabirImg}
+              alt="Muthu Mohamed Kabir - Full-Stack Web and Embedded Hardware Engineer"
               width={128}
               height={128}
               className="w-full h-full rounded-full object-cover border-4 border-[#0B1319]"
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
 
         {/* Hero Title & Subtitle Structure matching target site */}
         <div className="space-y-4 max-w-3xl">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.5 }}
@@ -76,7 +76,7 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Tech Stack Horizontal Pills matching target template */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.5 }}
@@ -87,7 +87,7 @@ const Hero: React.FC = () => {
           </span>
           <div className="flex flex-wrap justify-center gap-2">
             {techStack.map((tech) => (
-              <span 
+              <span
                 key={tech}
                 className="px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-slate-800 text-slate-200 text-xs font-semibold hover:border-cyan-500/40 transition-colors"
               >
@@ -98,7 +98,7 @@ const Hero: React.FC = () => {
         </motion.div>
 
         {/* Action Button & Social Links matching target template */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.35, duration: 0.5 }}
@@ -145,7 +145,7 @@ const Hero: React.FC = () => {
         </motion.div>
 
         {/* Key Verified Metrics Cards */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.45, duration: 0.6 }}
